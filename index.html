@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Site</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container{
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color: #0077cc;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        button{
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Meu Primeiro Site no GitHub Pages</h1>
+
+        <p>Este site foi criado para a atividade de GitHub Actions e GitHub Pages.</p>
+
+        <button onclick="mensagem()">Clique Aqui</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function mensagem() {
+            document.getElementById("resultado").innerHTML =
+                "Parabéns! Seu JavaScript está funcionando.";
+        }
+    </script>
+
+</body>
+</html>
