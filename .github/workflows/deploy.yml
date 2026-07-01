@@ -18,12 +18,13 @@ jobs:
 
       - name: Cofigurar o Github Pages
         uses: actions/configure-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+
              
       - name: Compactar Artefatos do Site
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+
           
+      - name: Publicar no Github Pages
+        uses: actions/deploy-pages@v4
