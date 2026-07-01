@@ -16,8 +16,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deploy para GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Cofigurar o Github Pages
+        uses: actions/configure-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
+             
+      - name: Compactar Artefatos do Site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
