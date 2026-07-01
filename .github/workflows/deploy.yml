@@ -22,7 +22,6 @@ jobs:
              
       - name: Compactar Artefatos do Site
         uses: actions/upload-pages-artifact@v3
-        path: '.'
 
           
       - name: Publicar no Github Pages
